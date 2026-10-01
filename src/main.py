@@ -10,4 +10,7 @@ show_tasks()
 def delete_task(number):
     if 1 <= number <= len(tasks):
         tasks.pop(number - 1)
-        
+def search_tasks(query):
+    for task in tasks:
+        if query in task:
+            print(task)
